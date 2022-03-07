@@ -1,1 +1,1 @@
-alert("test")
+alert("sraaanie, o tak ")
