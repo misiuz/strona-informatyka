@@ -1,1 +1,0 @@
-alert("sraaanie, o tak ")
