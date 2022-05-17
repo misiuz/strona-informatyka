@@ -10,7 +10,7 @@ body{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.baner{
+.menu{
     height: 100vh;
     width: 100%;
     color: #fff;
@@ -23,7 +23,6 @@ body{
   }
 
 #title{
-    margin: auto;
     margin-left: -400px;
     margin-top: 0;
     font-size: 20pt;
@@ -40,7 +39,7 @@ body{
 }  
 
 /* navbar */
-.navbar{
+.navbar{  
   width: 85%;
   margin: auto;
   padding: 35 px 0;
@@ -120,34 +119,36 @@ body{
     position: relative;
     font-family: "Source Code Pro", monospace;
     text-align: center;
-}
-/*
-.content h1::before,
-.content h1::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    margin-bottom: 0;
 }
 
+.content h1::after {
+    display: block;
+    content: "";
+    position: relative;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+}
+/*
 .content h1::before {
     background: var(--bg-color);
     animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 
 }
+*/
+
 
 .content h1::after {
-    width: 0.125em;
-    background: white;
-    animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards,
-    blink 750ms steps(var(--typewriterCharacters)) infinite;
-
+  width: 10px;
+  background: white;
+  /* margin-left: 800px;
+  animation: typewriter var(--typewriterSpeed)
+  steps(var(--typewriterCharacters)) 0s forwards,
+  blink 400ms steps(var(--typewriterCharacters)) infinite; */
 }
-*/
 button{
     width: 200px;
     padding: 15px 0;

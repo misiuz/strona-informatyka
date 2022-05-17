@@ -1,0 +1,5 @@
+Czego nie ma:
+Nie miga
+Zła pozycja migania
+
+text w logo jest absolute
