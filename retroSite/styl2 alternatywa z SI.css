@@ -16,11 +16,14 @@ body{
     color: #fff;
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0, 0, 0, 0.75)), url(./img/wall.gif);
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+/* logo */
 
 #logo img{
   width: 60px;
@@ -73,7 +76,7 @@ body{
     width: 100%;
 }
 
-/* navbar end */
+/* content */
 .content{
     position:fixed;
     width: 100%;
@@ -92,24 +95,6 @@ body{
     transform: translateY(3rem);
     animation: fadeInUp 2s ease calc(var(--typewriterSpeed) - 2s) forwards;
 }
-/* @keyframes typewriter {
-    to {
-      left: 100%;
-    }
-  }
-
-  @keyframes blink {
-    to {
-      background: transparent;
-    }
-  } */
-
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
 .content h1{
     font-size: 70px;
@@ -121,35 +106,6 @@ body{
     animation: typing 1s infinite;
 }
 
-@keyframes typing {
-  0% {border-color: rgba(255, 255, 255, 1);}
-  20% {border-color: rgba(255, 255, 255, 1);}
-  60% {border-color: rgba(255, 255, 255, 0);}
-}
-
-/* .content h1::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 500px;
-}
-
-.content h1::before {
-    background: var(--bg-color);
-    animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
-
-}
-
-.content h1::after {
-  width: 10px;
-  background: white;
-  animation: typewriter var(--typewriterSpeed)
-  steps(var(--typewriterCharacters)) 0s forwards,
-  blink 400ms steps(var(--typewriterCharacters)) infinite;
-} */
 
 button{
     width: 200px;
@@ -165,11 +121,11 @@ button{
     overflow: hidden;
 }
 span{
-    background: rgb(42, 42, 209);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
+  background: rgb(42, 42, 209);
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
     left: 0;
     bottom: 0;
     z-index: -1;
@@ -177,10 +133,11 @@ span{
 }
 
 button:hover span{
-    width: 100%;
+  width: 100%;
 }
 
-/* bar */
+/*     | | | */
+/* bar \/\/\/ */
 
 /* width */
 ::-webkit-scrollbar {
@@ -201,4 +158,19 @@ button:hover span{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(22, 22, 22);
+  }
+
+/* animacje */
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes typing {
+    0% {border-color: rgba(255, 255, 255, 1);}
+    20% {border-color: rgba(255, 255, 255, 1);}
+    60% {border-color: rgba(255, 255, 255, 0);}
   }
