@@ -22,10 +22,6 @@ body{
     background-attachment: fixed;
   }
 
-#logo{
-  margin-top: 10px;
-}
-
 #logo img{
   width: 60px;
   margin-right: 10px;  
@@ -96,7 +92,7 @@ body{
     transform: translateY(3rem);
     animation: fadeInUp 2s ease calc(var(--typewriterSpeed) - 2s) forwards;
 }
-@keyframes typewriter {
+/* @keyframes typewriter {
     to {
       left: 100%;
     }
@@ -106,7 +102,7 @@ body{
     to {
       background: transparent;
     }
-  }
+  } */
 
   @keyframes fadeInUp {
     to {
@@ -114,41 +110,47 @@ body{
       transform: translateY(0);
     }
   }
+
 .content h1{
     font-size: 70px;
     position: relative;
     font-family: "Source Code Pro", monospace;
-    text-align: center;
-    margin: 0;
+    margin: auto;
+    width: min-content;
+    border-right: 5px solid rgba(255, 255, 255, 1);
+    animation: typing 1s infinite;
 }
 
-.content h1::after {
+@keyframes typing {
+  0% {border-color: rgba(255, 255, 255, 1);}
+  20% {border-color: rgba(255, 255, 255, 1);}
+  60% {border-color: rgba(255, 255, 255, 0);}
+}
+
+/* .content h1::after {
     display: block;
     content: "";
-    position: relative;
+    position: absolute;
     top: 0;
-    right: 0;
     bottom: 0;
-    left: 0;
+    left: 500px;
 }
-/*
+
 .content h1::before {
     background: var(--bg-color);
     animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 
 }
-*/
-
 
 .content h1::after {
   width: 10px;
   background: white;
-  /* margin-left: 800px;
   animation: typewriter var(--typewriterSpeed)
   steps(var(--typewriterCharacters)) 0s forwards,
-  blink 400ms steps(var(--typewriterCharacters)) infinite; */
-}
+  blink 400ms steps(var(--typewriterCharacters)) infinite;
+} */
+
 button{
     width: 200px;
     padding: 15px 0;
