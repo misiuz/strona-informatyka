@@ -1,5 +1,3 @@
-Czego nie ma:
-Nie miga
-Zła pozycja migania
-
 omówić zmiany i ewentualie wprowadzić do pozostałych podstron
+
+https://codepen.io/ricardoolivaalonso/pen/mdPzrpe

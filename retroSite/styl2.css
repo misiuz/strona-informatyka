@@ -16,27 +16,32 @@ body{
     color: #fff;
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0, 0, 0, 0.75)), url(./img/wall.gif);
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
 
-#title{
-    margin-left: -400px;
-    margin-top: 0;
-    font-size: 20pt;
-    color: #fff;
-    text-decoration: none;
-    list-style: none;
-    position: absolute;
-    left: 600px;
+/* logo */
+#logo h3{
+  display:flex ;
+  align-items: center;
+  margin-left: auto;
 }
-.logo{
-    width: 60px;
-    margin-top: 10px;
-    cursor: pointer;
-}  
+
+#logo img{
+  display: inline-flexbox;
+  width: 60px;
+  margin-right: 10px;  
+}
+
+#logo #tekst{
+  font-size: 20pt;
+  color: #fff;
+  text-decoration: underline rgb(87, 47, 160);
+  vertical-align: 50%;
+}
 
 /* navbar */
 .navbar{  
@@ -76,11 +81,11 @@ body{
     width: 100%;
 }
 
-/* navbar end */
+/* content */
 .content{
     position:fixed;
     width: 100%;
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
     text-align: center;   
     color: white;
@@ -95,60 +100,17 @@ body{
     transform: translateY(3rem);
     animation: fadeInUp 2s ease calc(var(--typewriterSpeed) - 2s) forwards;
 }
-@keyframes typewriter {
-    to {
-      left: 100%;
-    }
-  }
 
-  @keyframes blink {
-    to {
-      background: transparent;
-    }
-  }
-
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 .content h1{
     font-size: 70px;
-    margin-top: 200px;
     position: relative;
     font-family: "Source Code Pro", monospace;
-    text-align: center;
-    margin-bottom: 0;
+    margin: auto;
+    width: max-content;
+    border-right: 5px solid rgba(255, 255, 255, 1);
+    animation: typing 1s infinite;
 }
 
-.content h1::after {
-    display: block;
-    content: "";
-    position: relative;
-    /* top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; */
-}
-/*
-.content h1::before {
-    background: var(--bg-color);
-    animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
-
-}
-*/
-
-
-.content h1::after {
-  width: 10px;
-  background: white;
-  /* margin-left: 800px;
-  animation: typewriter var(--typewriterSpeed)
-  steps(var(--typewriterCharacters)) 0s forwards,
-  blink 400ms steps(var(--typewriterCharacters)) infinite; */
-}
 button{
     width: 200px;
     padding: 15px 0;
@@ -163,11 +125,11 @@ button{
     overflow: hidden;
 }
 span{
-    background: rgb(42, 42, 209);
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
+  background: rgb(42, 42, 209);
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
     left: 0;
     bottom: 0;
     z-index: -1;
@@ -175,10 +137,11 @@ span{
 }
 
 button:hover span{
-    width: 100%;
+  width: 100%;
 }
 
-/* bar */
+/*     | | | */
+/* bar \/\/\/ */
 
 /* width */
 ::-webkit-scrollbar {
@@ -187,16 +150,31 @@ button:hover span{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #680000;
+    background: rgb(0, 0, 0);
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0);
+    background: #680000;
     border-radius: 7px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(22, 22, 22);
+    background: #c90000;
+  }
+
+/* animacje */
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes typing {
+    0% {border-color: rgba(255, 255, 255, 1);}
+    20% {border-color: rgba(255, 255, 255, 1);}
+    60% {border-color: rgba(255, 255, 255, 0);}
   }

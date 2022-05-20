@@ -11,7 +11,9 @@
 <body>
     <div class="menu">
         <div class="navbar">
-            <a href="site.html"><img src="./img/joystick.png" class="logo"></a><a href="site.html"><h3 id="title">RetroGames.com</h3></a>
+            <div id="logo">
+                <h3><a href="glowna.html"><img src="./img/joystick.png"></a><a href="glowna.html" id="tekst">RetroGames.com</a></h3>
+            </div>
             <ul>
                 <li><a href="powitanie.html">Powitanie</a></li>
                 <li><a href="glowna.html">Strona główna</a></li>
@@ -19,19 +21,20 @@
                 <li><a href="onas.html">O nas</a></li>
             </ul>
         </div>
-        
+            
         <div class="content">
-            <h1>Dupa!</h1>
+            <h1 id="banner" text="Strona główna!" predkosc="250" zrodlo="tekst">&#x200E;</h1>
             <p>Witaj na naszej stronie o grach w stylu retro.<br>
                 Dowiesz się tutaj wszystkiego o pierwszych grach komputerowych <br>
                 oraz poznasz ich niezwykłą historie
             </p>
 
             <div>
-                <button onclick="document.location.src='glowna.html'" type="button"><span></span>Czytaj dalej</button>
+                <a href="glowna.html"><button type="button"><span></span>Czytaj dalej</button></a>
             </div>
         </div class="dane">
         </div>
-        
+    <script src="./tablica_jezyki.js"></script>
+    <script src="./animacjaHelo.js"></script>
 </body>
 </html>
