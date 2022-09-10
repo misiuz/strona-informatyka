@@ -325,3 +325,12 @@ aside{
     font-size: 0.8em;
     cursor: pointer;
 }
+
+
+/* slider do kopii */
+.slider{
+    width: 12vw;
+    height: 10vh;
+    inline-size: 150px; 
+    overflow: hidden;
+}
