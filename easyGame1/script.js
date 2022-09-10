@@ -102,4 +102,5 @@ var blocks = setInterval(function(){
     }else{
         character.style.top = characterTop - 0.5 + "px";
     }
+    document.querySelector("aside").innerHTML = counter - 9
 }, 1);

@@ -17,7 +17,8 @@
     position: relative;
     top: 400px;
     left: 190px;
-    z-index: 1000000;
+    z-index: 1;
+
 }
 .block{
     width: 400px;
@@ -34,4 +35,7 @@
     position: relative;
     top:  100px;
     margin-top: -20px;
+}
+aside{
+    font-size: 5vh;
 }

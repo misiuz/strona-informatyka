@@ -15,9 +15,69 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+
+    background-image: linear-gradient(rgba(19, 19, 19, 0.75),rgba(0, 0, 0, 0.75)), url(./img/wall.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--primary);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 0 0 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 *{box-sizing: border-box;}
-/*ScrolBar*/
+
+
+/**************NavBar*****************/
+
+.navbar{  
+    width: 85%;
+    margin: 0;
+    padding: 35 px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .navbar ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 0 45px;
+      position: relative;
+  }
+   
+  .navbar ul li a{
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+  
+  }
+  .navbar ul li::after{
+      content: '';
+      height: 3px;
+      width: 0;
+      background-color: var(--accent);
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+  }
+  .navbar ul li:hover::after{
+      width: 100%;
+  }
+  /******* Menu navbar end *******/
+  
+/************ ScrolBar ************/
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -46,33 +106,14 @@ ul{
 }
 
 .container{
-    max-width: 1600px;
+    max-width: 1700px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: start;
     align-items: center;
 }
-header{
-    background-image: linear-gradient(rgba(19, 19, 19, 0.75),rgba(0, 0, 0, 0.75)), url(./img/wall.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /*  background-attachment: fixed;*/
-    min-height: 100vh;
-    color: var(--primary);
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-header main{
-    width: 100%;
-    margin: 0 0 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
+
 
 
 nav .container, .header-body .container{
@@ -234,9 +275,7 @@ aside{
     position: relative;
     z-index: 1;
 }
-.social li{
-    padding-bottom: 1.2em 0;
-}
+
 .menu{
     background: #111;
     padding: 2em;
@@ -266,14 +305,14 @@ aside{
     justify-content: start;
 }
 .header-body .container > div{
-    max-width: 60em;
+    max-width: 90em;
 }
 .header-body .container .title{
-    font-size: 50pt;
+    font-size: 10vh;
 }
 .progress{
     width: 50%;
-    height: 2px;
+    height: 3px;
     background: #6c6e6e;
 }
 .progress div{
