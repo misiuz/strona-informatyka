@@ -34,7 +34,9 @@ body{
     justify-content: space-between;
     flex-direction: column;
 }
-*{box-sizing: border-box;}
+*{
+    box-sizing: border-box;
+}
 
 
 /**************NavBar*****************/
@@ -291,17 +293,7 @@ aside{
     overflow-x: hidden;
     z-index: 0;
 }
-.menu ul{
-    margin: 3em;
-}
-.menu li{
-    padding: 0.5em 0;
-    margin: 0.5em 0;
-    border-bottom: 1px #61e5ec solid;
-}
-.menu-open{
-    left: 6em;
-}
+
 /*Body*/
 .header-body .container{
     justify-content: start;
@@ -310,7 +302,7 @@ aside{
     max-width: 90em;
 }
 .container .StronaGlowna{
-    width: 55vw; /* neeeew */
+    width: 50vw; /* szerokość prawej */
 }
 .header-body .container .title{
     font-size: 10vh;
@@ -332,17 +324,17 @@ aside{
 }
 
 
-/* slider do kopii */
+/* slider*/
 .slider{
-    margin-top: 15vh;
-    width: 30vw; /* neeeeew */
-    height: 40vh;
+    margin-top: 10vh;
+    width: 30vw;
+    height: 50vh;
     overflow-wrap: break-word;
     hyphens: manual;
     overflow: hidden;
 }
 .slider div{
-    min-height: 40vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
