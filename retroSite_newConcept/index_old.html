@@ -5,14 +5,8 @@
     <link rel="shortcut icon" href="./img/gaming-console.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_copy.css">
+    <link rel="stylesheet" href="style.css">
     <title>Strona Główna - RetroGaming.com</title>
-    <script>
-        function Zaznacz(id)
-        {
-            document.querySelector(`#${id}`).checked = true;
-        }
-    </script>
 </head>
 <body>
     
@@ -28,7 +22,7 @@
                     <div class="navbar">
                         <ul>
                             <li><a href="powitanie.html">Powitanie</a></li>
-                            <li><a href="glowna.html">Strona główna</a></li>
+                            <li><a href="index.html">Strona główna</a></li>
                             <li><a href="gry.html">Gry</a></li>
                             <li><a href="onas.html">O nas</a></li>
                         </ul>
@@ -53,27 +47,24 @@
             <div class="header-body">
                 <div class="container">
                     <div class="slider">
-                        <div id="pierwszy">
-                            <h1>Tytuł pierwszy</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        <div>
+                            <h1 class="slide-counter">/01</h1>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <p class="slide-cntrl active">
+                                First slide
                             </p>
-                        </div>
-                        <div id="drugi">
-                            <h1>Tytuł drugi</h1>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <p class="slide-cntrl">
+                                Second slide
                             </p>
-                        </div>
-                        <div id="trzeci">
-                            <h1>Tytuł Trzeci</h1>
-                            <p>
-                                Jebać nawrockiego
+                            <p class="slide-cntrl">
+                                Third slide
                             </p>
                         </div>
                     </div>
                     
-                    <div class="StronaGlowna">
+                        <div class="StronaGlowna">
                             <h1 class="title">Strona główna</h1>
                         
                         <p>Witaj na naszej stronie o grach retro.<br>
@@ -83,25 +74,22 @@
                         <p>Poniżej znajduje się oś czasu:</p>
                         
                         <!-- Przyciski neonowe -->
-                        <input type="radio" name="OsCzasu" id="InpPierw" hidden checked>
-                        <input type="radio" name="OsCzasu" id="InpDrug" hidden>
-                        <input type="radio" name="OsCzasu" id="InpTrzec" hidden>
                         <div class="neon-btn">
-                            <a href="#pierwszy" onclick="Zaznacz('InpPierw')">
+                            <a href="lata70.html">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 Lata 70'
                             </a>
-                            <a href="#drugi" onclick="Zaznacz('InpDrug')">
+                            <a href="lata80_90.html">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 Lata 80' i 90'
                             </a>
-                            <a href="#trzeci" onclick="Zaznacz('InpTrzec')">
+                            <a href="milenium.html">
                                 <span></span>
                                 <span></span>
                                 <span></span>

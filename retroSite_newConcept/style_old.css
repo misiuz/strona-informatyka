@@ -37,7 +37,7 @@ body{
 *{box-sizing: border-box;}
 
 
-/**************NavBar*****************/
+/***************NavBar*****************/
 
 .navbar{  
     width: 85%;
@@ -93,6 +93,8 @@ a{
     transition: 0.3s; 
     color: var(--primary);
 }
+/****end scrolbar***/
+
 a:hover{
     color: var(--accent);
 }
@@ -307,9 +309,6 @@ aside{
 .header-body .container > div{
     max-width: 90em;
 }
-.container .StronaGlowna{
-    width: 55vw; /* neeeew */
-}
 .header-body .container .title{
     font-size: 10vh;
 }
@@ -327,27 +326,4 @@ aside{
 .slider-cntrl{
     font-size: 0.8em;
     cursor: pointer;
-}
-
-
-/* slider do kopii */
-.slider{
-    margin-top: 15vh;
-    width: 30vw; /* neeeeew */
-    height: 40vh;
-    overflow-wrap: break-word;
-    hyphens: manual;
-    overflow: hidden;
-}
-.slider div{
-    min-height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.slider p{
-    display: block;
-    margin: 0;
-    text-align: center;
 }
