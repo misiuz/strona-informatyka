@@ -37,5 +37,8 @@
     margin-top: -20px;
 }
 aside{
+    position: absolute;
+    top: 5%;
+    left: calc(50% + 210px);
     font-size: 5vh;
 }

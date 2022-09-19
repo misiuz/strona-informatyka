@@ -4,6 +4,7 @@ var interval;
 var both = 0;
 var counter  = 0;
 var currentBlocks = []
+var score = 0
 
 
 function moveLeft(){ // function go to left
@@ -102,5 +103,20 @@ var blocks = setInterval(function(){
     }else{
         character.style.top = characterTop - 0.5 + "px";
     }
-    document.querySelector("aside").innerHTML = counter - 9
+
+// aside
+
+
+for(var i = 0; i < currentBlocks.length; i++){
+    let current = currentBlocks[i];
+    let iblock = document.getElementById("block"+current);  
+    let iblockTop = parseInt(window.getComputedStyle(iblock).getPropertyValue("top"));
+
+    if(iblockTop<characterTop){
+        score=current-3
+    }
+}
+
+console.log(score);
+    document.querySelector("aside").innerHTML = score
 }, 1);
