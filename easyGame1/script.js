@@ -5,6 +5,7 @@ var both = 0;
 var counter  = 0;
 var currentBlocks = []
 var score = 0
+var blocks
 
 
 function moveLeft(){ // function go to left
@@ -46,7 +47,11 @@ document.addEventListener("keyup", event =>{
     both = 0;
 })
 
-var blocks = setInterval(function(){
+document.querySelector("svg").addEventListener("click", event =>{
+    blocks = setInterval(Playing, 1);
+    document.querySelector("svg").style = "display: none;"
+})
+    function Playing(){
     var blockLast = document.getElementById("block"+(counter-1))
     var holeLast = document.getElementById("hole" + (counter-1))
     if(counter>0){
@@ -60,8 +65,8 @@ var blocks = setInterval(function(){
         hole.setAttribute("class", "hole")
         block.setAttribute("id", "block" + counter)
         hole.setAttribute("id", "hole" + counter)
-        block.style.top =topBlockLast+100+"px"
-        hole.style.top = topHoleLast+100+"px"
+        block.style.top =topBlockLast+ 100 +"px"
+        hole.style.top = topHoleLast+ 100 +"px"
         var random = Math.floor(Math.random() * 360);
         hole.style.left = random + "px";
         game.appendChild(block);
@@ -117,6 +122,5 @@ for(var i = 0; i < currentBlocks.length; i++){
     }
 }
 
-console.log(score);
     document.querySelector("aside").innerHTML = score
-}, 1);
+}

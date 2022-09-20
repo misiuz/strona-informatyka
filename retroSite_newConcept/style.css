@@ -19,7 +19,6 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-
     background-image: linear-gradient(rgba(19, 19, 19, 0.75),rgba(0, 0, 0, 0.75)), url(./img/wall.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +29,6 @@ body{
     position: relative;
     display: flex;
     justify-content: space-between;
-
     width: 100%;
     margin: 0 0 0 auto;
     position: relative;
@@ -282,7 +280,11 @@ aside{
     max-width: 90em;
 }
 .container .StronaGlowna{
-    width: 50vw; 
+    width: 42vw;    
+}
+.container .StronaGlowna p{
+    font-size: 2.5vh; 
+    color: var(--primary);   
 }
 .header-body .container .title{
     font-size: 10vh;
