@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans+Narrow&display=swap');
+/* @import url('https://fonts.google.com/specimen/Signika+Negative?preview.size=30'); */
+
+:root{   /**** bazowe kolory****/
+    --primary: #fff;
+    --secondary: #a2a2a2;
+    --accent: #03e9f4;
+    --typewriterSpeed: 2s;
+    --typewriterCharacters: 6;
+}
+
+/****** konfiguracja wstępna ********/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #3b3b3b;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(19, 19, 19, 0.75),rgba(0, 0, 0, 0.75)), url(./img/wall.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--primary);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a:hover{
+    color: var(--accent);
+}
+p{
+    color: var(--secondary);
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    align-items: center;
+}
+
+/****** end konfiguracja wstępna *******/
+
+/***** Nawigacja *****/
+
+.brand{
+    font-size: 2em;
+    font-weight: 600;
+}
+.logo{
+    display: inline-flexbox;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo h3{
+  display:flex ;
+  align-items: center;
+  margin-left: auto;
+  margin: 0;
+}
+
+#logo img{
+  display: inline-flexbox;
+  width: 60px;
+  margin-right: 10px;  
+}
+
+#logo #tekst{
+  vertical-align: 50%;
+}
+
+/**************NavBar*****************/
+
+.navbar{  
+    width: 85%;
+    margin: 0;
+    padding: 35 px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 45px;
+    position: relative;
+}
+ 
+.navbar ul li a{
+    text-decoration: none;
+     color: #fff;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: var(--accent);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/******* Menu navbar end *******/
+ 
+nav .container, .header-body .container{
+    padding: 1.65em 2.5em;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 1.5em 0 0;
+}
+
+nav ul a{
+    padding-bottom: 0.7em;
+}
+
+/**** end Nawigacja ****/
+
+/*********** Neon buttons css  *************/
+
+.header-body .container .neon-btn a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+.header-body .container .neon-btn a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.header-body .container .neon-btn a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.header-body .container .neon-btn a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.header-body .container .neon-btn a span{
+    position: absolute;
+    display: block;
+}
+.header-body .container .neon-btn a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.header-body .container .neon-btn a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.header-body .container .neon-btn a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.header-body .container .neon-btn a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+/*** end neon buttons css ****/
+
+/***** Content *****/
+
+.header-body .container{
+    justify-content: start;
+}
+.header-body .container > div{
+    max-width: 90em;
+}
+.container .StronaGlowna{
+    width: 43vw;
+
+}
+.container .StronaGlowna p{
+    font-size: 2.3vh; 
+    color: var(--primary);
+    font-family: 'Nunito', sans-serif;
+}
+.header-body .container .title{
+    font-size: 6vh;
+}
+
+/**** Slider ****/
+
+.slider{
+    margin-top: 10vh;
+    width: 30vw;
+    height: 55vh;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    overflow: hidden;
+    font-size: 2vh;
+}
+.slider div{
+    height: 56vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slider p{
+    height: calc(56vh- 3,34em);
+    display: block;
+    margin: 0;
+    text-align: left;
+    line-height: calc(2vh + 10px);
+    overflow-y: auto;
+}
+
+/************ ScrolBar ************/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #1a2324;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--accent);
+}
+a{
+    text-decoration: none;
+    transition: 0.3s; 
+    color: var(--primary);
+}
+/***end scrollbar***/
+
+
+/* TROCHĘ SYFU */
+
+
+    /* .menu{
+        background: #111;
+        padding: 2em;
+        height: 100%;
+        width: 20em;
+        position: absolute;
+        top: 0;
+        left: -20em;
+        transition: 500ms cubic-bezier(.74,-0.03,.83,.67);
+        overflow-y: scroll;
+        overflow-x: hidden;
+        z-index: 0;
+    } */
+
+    
+    /*.link-active{
+        color: var(--accent);
+        border-bottom: 2px var(--accent) solid;
+    }
+     .menu-btn{
+        background-color: #5a5a5a8a;
+        padding: 2.2em;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .menu-btn hover{
+        background: #2b2b2b;
+    }
+    nav .menu-btn{
+        display: none;
+        justify-self: end;
+        padding: 0;
+    } */

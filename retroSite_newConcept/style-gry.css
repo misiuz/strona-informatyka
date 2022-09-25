@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans+Narrow&display=swap');
+
+:root{   /**** bazowe kolory****/
+  --primary: #fff;
+  --secondary: #a2a2a2;
+  --accent: #03e9f4;
+  --typewriterSpeed: 2s;
+  --typewriterCharacters: 6;
+}
+
+/****** konfiguracja wstępna ********/
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #3b3b3b;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background-image: linear-gradient(rgba(19, 19, 19, 0.75),rgba(0, 0, 0, 0.75)), url(./img/wall.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--primary);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 0 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  transition: 0.3s; 
+  color: var(--primary);
+}
+
+a:hover{
+  color: var(--accent);
+}
+
+p{
+  color: var(--secondary);
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  max-width: 1700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  align-items: center;
+}
+
+/****** end konfiguracja wstępna *******/
+
+/***** Nawigacja *****/
+
+.logo{
+  display: inline-flexbox;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.brand{
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#logo h3{
+  display:flex ;
+  align-items: center;
+  margin-left: auto;
+  margin: 0;
+}
+
+#logo img{
+  display: inline-flexbox;
+  width: 60px;
+  margin-right: 10px;  
+}
+
+#logo #tekst{
+  vertical-align: 50%;
+}
+
+/**************NavBar*****************/
+
+.navbar{  
+  width: 85%;
+  margin: 0;
+  padding: 35 px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 45px;
+    position: relative;
+}
+ 
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: var(--accent);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+/******* Menu navbar end *******/
+
+nav .container, .header-body .container{
+  padding: 1.65em 2.5em;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+  margin: 0 1.5em 0 0;
+}
+nav ul a{
+  padding-bottom: 0.7em;
+}
+ 
+.container ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+
+}
+.container ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color:  #03e9f4;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.container ul li:hover::after{
+  width: 100%;
+}
+
+/**** end Nawigacja ****/
+
+/**** Content ****/
+.content{
+    color: var(--primary); 
+    width: 40vw;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17pt;
+    font-weight: 200;
+    line-height: 35px;
+}
+.content h2{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40pt;
+}
+.content img{
+  width: 20vh;
+}
+iframe{
+    flex-direction: column;
+}
+/**** end Content ****/
+
+/************ ScrolBar ************/
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #1a2324;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--accent);
+}
+a{
+  text-decoration: none;
+  transition: 0.3s; 
+  color: var(--primary);
+}
+/***end scrollbar***/
+
+/***** animacje ********/
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes typing {
+    0% {border-color: rgba(255, 255, 255, 1);}
+    20% {border-color: rgba(255, 255, 255, 1);}
+    60% {border-color: rgba(255, 255, 255, 0);}
+  }
+
+  /* gameBox */
+  .blur{
+    filter: blur(5px);
+  }
+
+  .gameBox{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    height: 90vh;
+    width: 80vw;
+    top: 5vh;
+    left: 10vw;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    transition: opacity 1s ease;
+  }
+
+  .visible{
+    visibility: visible !important;
+    opacity: 1;
+  }
+
+  .gameBox img{
+    padding: 10px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  
+  .gameBox iframe{
+    margin: auto;
+  }

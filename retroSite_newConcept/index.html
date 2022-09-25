@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/gaming-console.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-index.css">
+    <title>Strona Główna - RetroGaming.com</title>
+    <script>
+        function Zaznacz(id)  
+        {
+            document.querySelector(`#${id}`).checked = true;
+        }
+    </script>
+</head>
+<body>
+        <main>
+            <nav>
+            <div class="container">
+            <div id="logo">
+                <h3><a href="index.html"><img src=./img/gaming-console.png class="logo"></a><a href="index.html" id="tekst" class="brand">RetroGames.com</a></h3>
+            </div>
+                    <div class="navbar">
+                        <ul>
+                            <li><a href="powitanie.html">Powitanie</a></li>
+                            <li><a href="index.html">Strona główna</a></li>
+                            <li><a href="gry.html">Gry</a></li>
+                            <li><a href="onas.html">O nas</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+            </nav>
+            <div class="header-body">
+                <div class="container">
+                    <div class="slider">
+                        <div id="pierwszy">
+                            <h1>Lata 70'</h1>
+                            <p>
+                                Początkowo gry były typowo produktami akademickimi. Osoba, która je upowszechniła to Ralph Baer. 
+                                Zamierzał stworzyć interaktywną grę możliwą do podłączenia do telewizora. 
+                                Wynalazł kontrolery tj. pistolet do strzelania w ekran, oraz doprowadził do wydania pierwszej w 
+                                historii konsoli gier wideo pod nazwą Magnavox Odyssey (1972). Gra ta zapoczątkowała pierwszą generację platform do grania.<br> 
+                                Jednak masową produkcję umożliwiła gra produkowana przez Atari - "Pong". 
+                                Jest uproszczoną wersją symulatora tenisa stołowego, której celem było pokonanie przeciwnika poprzez większą liczbę punktów. 
+                                Powmysłodawcą tej gry był sam Baera, ale została ona skopiowana przez Nolana Bushnella.<br>
+                                  
+                            </p>
+                        </div>
+                        <div id="drugi">
+                            <h1>Lata 80' i 90'</h1>
+                            <p>
+                                Przełom technologiczny wśród gier komputerowych, nastąpił dzięki wprowadzeniu w 1982 roku komputera ZX Spectrum o zamkniętej 
+                                architekturze, umożliwiającego wyświetlanie kolorowej grafiki i odtwarzanie dźwięku na domowym telewizorze; pozwolił on na powstanie takich gier 
+                                platformowych, jak Manic Miner Matthew Smitha (1983) i jego kontynuacja Jet Set Willy (1984). 
+                                Odpowiedzią ze strony konkurencji była sprzedaż niezwykle popularnego (17 milionów sprzedanych egzemplarzy), 8-bitowego Commodore 64, na którym zadebiutowały strategiczne gry turowe Defender of 
+                                the Crown (1986) oraz klasyczna Pirates! (1987) Sida Meiera. 
+                                Do 1985 roku powstały inne innowacyjne komputery: Atari 800 XL, 16-bitowy Atari 512 ST Amiga 1000.
+                            </p>
+                        </div>
+                        <div id="trzeci">
+                            <h1>XXI w.</h1>
+                            <p>
+                                Przełom XX i XXI wieku zaczął kształtować rynek gier. Międzynarodowy rozgłos zyskały targi branżowe w stylu Electronic Entertainment Expo i 
+                                Games Convention. Upowszechniły się tzw. hybrydy – mieszaniny różnych gatunków, między innymi cyberpunkowy Deus Ex (2000), będący połączeniem 
+                                shootera z grą fabularną. Rozwój przeżyły gry akcji, na przykład Half-Life 2 (2004); przygodowe gry akcji, na przykład  Grand Theft Auto III (2001), Red Dead Redemption (2010); 
+                                gry wyścigowe, między innymi Forza Motorsport (2005); także gry fabularne, na przykład polski Wiedźmin (2007). 
+                                Debiut platformy cyfrowej dystrybucji gier Steam, a także konsolowych Xbox Live Arcade i PlayStation Network, spowodował rozwój tego typu sprzedaży 
+                                elektronicznej rozrywki.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="StronaGlowna">
+                            <h1 class="title">Historia gier komputerowych</h1>
+                            <p>
+                            Poznaj historię pierwszych gier wideo i to jak zmieniały się na przestrzeni lat<br>
+                            Początki gier sięgają już lat 40', kiedy Thomas A. Goldsmith Jr. i Estl Ray w 1943 r. 
+                            stworzyli analogowy symulator pocisku rakietowego.<br> 
+                            My jednak skupiliśmy się na trzech konkretnych okresach w dziejach gier.
+                        </p>
+                        <p><strong>Poniżej znajduje się oś czasu:</strong></p>
+                        
+                        <!-- Przyciski neonowe -->
+                        <input type="radio" name="OsCzasu" id="InpPierw" hidden checked>
+                        <input type="radio" name="OsCzasu" id="InpDrug" hidden>
+                        <input type="radio" name="OsCzasu" id="InpTrzec" hidden>
+                        <div class="neon-btn">
+                            <a href="#pierwszy" onclick="Zaznacz('InpPierw')">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Lata 70'
+                            </a>
+                            <a href="#drugi" onclick="Zaznacz('InpDrug')">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Lata 80' i 90'
+                            </a>
+                            <a href="#trzeci" onclick="Zaznacz('InpTrzec')">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                XXI w.
+                            </a>
+                        </div>
+                        
+                        </div>
+                    
+                </div>
+            </div>
+        </main>
+    
+</body>
+</html>

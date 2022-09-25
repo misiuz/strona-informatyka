@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans+Narrow&family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    
+}
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(6, 60, 211);
+    border-radius: 50%;
+    position: relative;
+    top: 400px;
+    left: 190px;
+    z-index: 1;
+
+}
+.block{
+    width: 400px;
+    height: 20px;
+    background-color: rgb(172, 165, 165);
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+.hole{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    top:  100px;
+    margin-top: -20px;
+}
+aside{
+    color: rgb(194, 168, 21);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10pt;
+    position: absolute;
+    top: 5%;
+    left: calc(50% + 210px);
+    font-size: 5vh;
+}
+
+svg{
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    z-index: 5;
+}
