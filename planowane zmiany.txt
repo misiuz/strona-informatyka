@@ -1,9 +1,0 @@
-omówić zmiany i ewentualie wprowadzić do pozostałych podstron
-
-fallen game: 
- *button start
-
-https://codepen.io/ricardoolivaalonso/pen/mdPzrpe
-
-newConcept/style2.css
-222: border czy outline???
