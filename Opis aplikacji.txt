@@ -1,0 +1,18 @@
+Stronę wykonali:
+    Miłosz Kaczmarek gr.1
+    Michał Zdunek gr.2
+    Mateusz Pogorzelec gr.2
+
+****************************INSTRUKCJE****************************
+
+1. W celu otwarcia strony należy otworzyć główny plik o nazwie powitanie.html znajdujący się w folderze "retroSite". 
+    (w razie niepoprawnego działania strony należy uruchomić Live Server w Visual Studio Code w tym samym pliku).
+2. Gdyby z żaden z powyższych sposobów nie zadział, poniżej znajduję się link:
+https://misiuz.github.io/strona-informatyka/retroSite_newConcept/powitanie.html
+
+3. Zalecana przeglądarka: Google Chrome lub inna oparta na chromium. 
+
+****************************OPIS APLIKACJI****************************
+
+Strona obejmuje tematykę gier wideo i historii ich powstawania. 
+Na stronie mamy możliwość zagrania w naszą grę "Falling ball" znajdującej się w zakładce "Gry".
