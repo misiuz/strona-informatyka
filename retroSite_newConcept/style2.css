@@ -209,8 +209,12 @@ nav ul a{
   animation: typing 1s infinite;
 }
 .tworcy{
+  width: 100%;
+  height: 75vh;
   display: flex;
-  
+  justify-content: center;
+	align-items: center;
+  overflow: hidden;
 }
 /************* Czytaj Dalej*************/
 button{
