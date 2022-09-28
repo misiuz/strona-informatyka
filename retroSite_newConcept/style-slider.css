@@ -41,7 +41,6 @@ button:focus {
 .cardList__btn {
   --btn-size: 35px;
   width: var(--btn-size);
-  height: var(--btn-size);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -146,7 +145,7 @@ button:focus {
 .infoList .info__wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 110%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -183,7 +182,7 @@ button:focus {
   --mg-left: 40px;
   --text-size-offset: 0.12;
   font-weight: 600;
-  margin-left: var(--mg-left);
+  /* margin-left: var(--mg-left); */
   margin-bottom: calc(var(--mg-left) / 2);
   padding-bottom: 0.8rem;
 }
@@ -196,17 +195,17 @@ button:focus {
   transform: translate(calc(-1 * var(--mg-left)), -50%);
 }
 
-.info .location::before {
+/* .info .location::before {
   top: 50%;
   width: 20px;
   height: 5px;
-}
+} */
 
-.info .location::after {
+/* .info .location::after {
   bottom: 0;
-  width: 60px;
+  width: 27vh;
   height: 2px;
-}
+} */
 
 .info .description {
   --text-size-offset: 0.065;
